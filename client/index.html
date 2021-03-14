@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>GeckoID | Stripe Identity Verification</title>
+    <meta
+      name="description"
+      content="Gecko ID Verification via Stripe Identity Verification"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2CNumber.parseFloat"></script>
+    <script src="js/constants.js" defer></script>
+    <script src="js/index.js" defer></script>
+  	<link id="external-css" rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap" media="all">
+</head>
+
+  <body>
+    <nav>
+      <div class="nav-content">
+        <div class="nav-left">
+          <a href="/">
+            <img src="./media/logo.svg" />
+          </a>
+        </div>
+        <div class="nav-right">
+          <a href="https://gecko-biz.webflow.io/sign-up">Sign Up</a>
+          <span class="divider">|</span>
+          <a href="https://gecko-biz.webflow.io">GeckoBiz</a>
+        </div>
+      </div>
+    </nav>
+    <main class="sr-main">
+      <div class="sr-verification-summary">
+        <h1 class="title">Geck ID Verified.</h1>
+        <h4>Verify your identity to unlock ID secured hires</h4>
+      </div>
+      <button id="create-verification-intent">Verify me</button>
+      <div class="redirect-link-container">
+        <a id="create-verification-intent-new-page" href="javascript:void(0);"
+          >Open in a new page</a
+        >
+        <img src="./media/external.svg" />
+      </div>
+    </main>
+  </body>
+</html>
